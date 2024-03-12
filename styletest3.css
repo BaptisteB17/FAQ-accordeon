@@ -1,0 +1,131 @@
+
+:root {
+    --ff-sans: "Work Sans", sans-serif;
+
+    --fw-light: 400;
+    --fw-normal: 600;
+    --fw-bold: 700;
+
+    --fs-smaller: 0.75rem;
+    --fs-small: 1rem;
+    --fs-medium: 1.25rem;
+    --fs-large: 3rem;
+
+    --fc-light: hsl(0, 0%, 100%);
+    --fc-green: hsl(75, 94%, 57%);
+
+    --clr-white:hsl(0, 0%, 100%);
+    --clr-pink:hsl(275, 100%, 97%);
+    --clr-purple:hsl(292, 16%, 49%);
+    --clr-purpler:hsl(292, 42%, 14%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    border-radius: 50%;
+    margin: auto;
+    margin-block: 1.5rem;
+    height: 80px;
+}
+
+html {
+    font-family: var(--ff-sans);
+    font-weight: var(--fw-small);
+    color: var(--clr-purpler);
+    line-height: 1.5;
+}
+
+.svgclass {
+    padding-right: 1rem;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+h1 {
+    font-size: var(--fs-large);
+    color: var(--clr-purpler);
+}
+
+h2 {
+    font-size: var(--fs-small);
+}
+
+p {
+    margin-top: 10px;
+}
+
+.backgroundimg {
+    position:absolute;
+    z-index: 1;
+    width: 100vw;
+    top: 0;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    height: 100vh;
+    background-color: var(--clr-pink);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq {
+    position: absolute;
+    top: 20%;
+    max-width: 600px;
+    min-width: 300px;
+    background-color: var(--clr-white);
+    border-radius: 10px;
+    padding: 2rem;
+    z-index: 2;
+    margin-right: 10px;
+}
+
+.subheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.subheader:hover > h2 {
+    color: var(--clr-purple);
+}
+
+.group {
+    padding-block: 1rem;
+}
+
+.answer {
+    color: var(--clr-purple);
+    padding-right: 1rem;
+    font-size: var(--fs-smaller);
+}
+
+.icon {
+    padding-left: 1rem
+}
+
+.dropdown > *:not(:first-child) {
+    border-top: 1px solid var(--clr-pink);
+}
+
+.hidden {
+    display: none;
+}
